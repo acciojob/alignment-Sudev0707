@@ -1,16 +1,107 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>HTML Assignment 3</title>
+  <style>
+    table {
+      border: 1px solid black;
+      /* border-collapse: collapse; */
+      margin: 20px auto;
+      width: 90%; /* stretch like the example */
+    }
+    td {
+      border: 1px solid black;
+      padding: 5px;
+		/* margin:8px */
+    }
+    .center {
+      text-align: center;
+    }
+    .right {
+      text-align: right;
+    }
+    .green {
+      background-color: green;
+    }
+    .blue {
+      background-color: blue;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Page Heading -->
+  <h2 class="center">HTML Assignment #3</h2>
+
+  <!-- Table 1 -->
+  <table id="table-1" class="middle" border="1" >
+    <tr >
+      <td id="t11">left</td>
+      <td id="t12" class="center">center</td>
+      <td id="t13" class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+  </table>
+
+  <!-- Table 2 -->
+  <table id="table-2" class="middle">
+    <!-- First row, one single cell -->
+    <tr>
+      <td id="t21" colspan="6"></td>
+    </tr>
+    <!-- Second row -->
+    <tr>
+      <td rowspan="3"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="3"></td>
+    </tr>
+    <!-- Third row -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="2" rowspan="2"></td>
+    </tr>
+    <!-- Fourth row -->
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Fifth row -->
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+  </table>
+
+  <!-- Table 3 -->
+  <table id="table-3" class="middle">
+    <tr class="green">
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td id="t-image" class="center">
+        <img src="https://i.imgur.com/Idy3F2Z.jpeg" 
+             alt="Michael Jordan Dunk" width="400">
+      </td>
+      <td></td>
+    </tr>
+    <tr class="blue">
+      <td colspan="3"></td>
+    </tr>
+  </table>
 
 </body>
-
 </html>
